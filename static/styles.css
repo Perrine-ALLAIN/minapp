@@ -1,0 +1,57 @@
+.container { 
+     display : grid;
+     grid-template-columns: 1fr 1fr; 
+     gap  : 20px; 
+     grid-template-areas: "etudes projets" "competences hobbies"; 
+     grid-template-rows: 1fr 1fr;
+     height : 100vh}
+#etudes { 
+    grid-area : etudes; 
+    background-color : #e8acac; 
+    padding : 15px 
+}
+#projets { 
+    grid-area : projets;
+    background-color : #b9e8ac;
+    padding : 15px
+}
+#competences { 
+    grid-area : competences; 
+    background-color : #ace4e8; 
+    padding : 15px;
+     
+
+}        
+#hobbies { 
+    grid-area : hobbies; 
+    background-color : #e8acdb; 
+    padding : 15px;
+
+}
+.toute_page {
+    display : flex;
+    flex-direction: column;
+
+}
+
+.header {
+    background-color : #e8acac;
+    padding : 15px;
+    text-align : center;
+    display : flex;
+    align-items : center;
+    justify-content: space-between
+}
+
+
+
+#contact {
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    background-color: #9cd8c7;  
+    text-align: center;       
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    border-bottom: 1px solid #ddd;
+}

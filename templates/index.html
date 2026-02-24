@@ -2,6 +2,72 @@
 
 {% block content %}
 
-<div> INDEX </div>
+<title>
 
+    </title>
+
+    <body>
+        <div class = "toute_page">
+        <div class = header>
+        <div id="photo">
+        <img src="{{ url_for('static', path='/photo.jpg') }}" width="95" height="120" alt="Photo de Perrine Allain">
+        </div>
+        <div>
+            <p>
+            Perrine ALLAIN <br>
+            Elève aux Mines de Paris <br>
+            </p>
+        </div>
+        
+        </div>
+        <div id="contact">  
+            <p>
+            Numéro de téléphone : 0677401225 <br>
+            Adresse mail : perrine.allain@etu.minesparis.psl.eu <br>
+            Adresse : 270 rue Saint-Jacques 75005 Paris</p>
+        </div>
+        <div class = "container">
+        <div id="etudes">
+            <h2> Etudes</h2>
+            <p>
+                <ul>
+                    <li>2025-2029 : Cycle Ingénieur civil - Mines de Paris - Major d'entrée filière PC</li>
+                    <li>2023-2025 : CPGE PCSI-PC* - Lycée Chateaubriand - Rennes </li>
+                    <li>2023 : Baccalauréat général Maths-Physique section européenne anglais - Félicitations du jury- Lycée Emile Zola - Rennes</li>
+                </ul>
+            </p>
+        </div>
+        <div id="projets">
+            <h2> Projets réalisés</h2>
+            <p>
+                <ul>
+                    <li> Novembre 2025 - MIG Mode et luxe : Mini-projet de recherche sur les bijoux de mode pour une grande entreprise de luxe française </li>
+                    <li> 2024-2025 - TIPE : Mini-projet de recherche en binôme en chimie analytique sur les batteries lithium - ion </li>
+                    <li> 2025-aujourd'hui : Bénévolat dans une association de soutien scolaire pour des lycéens en zone d'éducation prioritaire</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="competences">
+            <h2> Compétences</h2>
+            <p>
+                <ul>
+                    <li> Langues : Français (Natif), Anglais (C1), Espagnol (B2)</li>
+                    <li> Programmation : Python, HTML/CSS </li>
+                    <li> Soft skills : Communication, Travail en équipe, Organisation</li>
+                </ul>
+        </div>
+        <div id="hobbies">
+            <h2> Centres d'intérêt</h2>
+            <p>
+                <ul>
+                    <li> Lecture : romans et essais</li>
+                    <li> Natation</li>
+                    <li> Voyages : Europe</li>
+                </ul>
+        </div>
+        </div>
+        </div>
+    </body>
+        
 {% endblock %}
