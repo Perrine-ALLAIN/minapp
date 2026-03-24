@@ -1,57 +1,121 @@
+:root {
+    --primary: #2c3e50;    
+    --accent: #bb2413;    
+    --bg-light: #fef7ef;   
+    --white: #ffffff;
+    --beige :  #f7efe9;
+}
+body {
+    background-color: var(--bg-light);
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+
 .container { 
      display : grid;
      grid-template-columns: 1fr 1fr; 
-     gap  : 20px; 
+     gap  : 30px; 
+     padding : 40px;
      grid-template-areas: "etudes projets" "competences hobbies"; 
      grid-template-rows: 1fr 1fr;
-     height : 100vh}
+     }
 #etudes { 
     grid-area : etudes; 
-    background-color : #e8acac; 
-    padding : 15px 
+    background-color :var(--bg-light); 
+    padding : 15px ;
+    border-radius: 7px;
+    border: 1px solid #f8eee5;     
+    transition: transform 0.2s ease
 }
 #projets { 
     grid-area : projets;
-    background-color : #b9e8ac;
-    padding : 15px
+    background-color : var(--bg-light);
+    padding : 15px;
+    border-radius: 7px;
+    border: 1px solid #f8eee5;     
+    transition: transform 0.2s ease
 }
 #competences { 
     grid-area : competences; 
-    background-color : #ace4e8; 
+    background-color :var(--bg-light); 
     padding : 15px;
-     
+    border-radius: 7px;
+    border: 1px solid #f8eee5;     
+    transition: transform 0.2s ease
 
 }        
 #hobbies { 
     grid-area : hobbies; 
-    background-color : #e8acdb; 
+    background-color :var(--bg-light); 
     padding : 15px;
+    border-radius: 7px;
+    border: 1px solid #f8eee5;     
+    transition: transform 0.2s ease
+}
 
+#etudes:hover, #projets:hover, #competences:hover, #hobbies:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 .toute_page {
     display : flex;
     flex-direction: column;
+    background : var(--white);
+    max-width: 1000px;
+    margin : 0 auto
 
 }
+ul { list-style-type:none;
+padding-left:  0;}
 
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
 .header {
-    background-color : #e8acac;
-    padding : 15px;
-    text-align : center;
+    background-color : var(--primary);
+    color : var(--white);
+    padding : 40px;
     display : flex;
-    align-items : center;
     justify-content: space-between
 }
 
+.header p {font-size : 1.2rem;
+text-align: right;}
 
+#photo img { border-radius: 15%;
+border: 1px solid var(--beige)
+;object-fit: cover;}
 
 #contact {
     margin-top: 20px;   
     margin-bottom: 20px;
-    background-color: #9cd8c7;  
+    background-color: var(--beige);
+    font-size: 0.9rem;  
     text-align: center;       
     display: flex;
     flex-direction: column;   
     align-items: center;      
     border-bottom: 1px solid #ddd;
+    justify-content: space-around;
 }
