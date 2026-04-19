@@ -7,7 +7,6 @@
   <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
-
 <body>
   {% block content %}{% endblock %}
 
@@ -15,6 +14,7 @@
   {% if DEBUG %}
   {{ hot_reload.script(url_for('hot-reload')) | safe }}
   {% endif %}
+
 </body>
 
 </html>

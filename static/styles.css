@@ -1,9 +1,10 @@
 :root {
-    --primary: #2c3e50;    
+    --primary: #3d5267;    
     --accent: #bb2413;    
     --bg-light: #fef7ef;   
-    --white: #ffffff;
+    --white: #fef9f6;
     --beige :  #f7efe9;
+    --primary-light :  #4d6c8b;
 }
 body {
     background-color: var(--bg-light);
@@ -13,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     font-family: 'Playfair Display', serif;
     border-bottom: 2px solid var(--accent);
@@ -30,28 +32,38 @@ h2 {
      grid-template-areas: "etudes projets" "competences hobbies"; 
      grid-template-rows: 1fr 1fr;
      }
+
 #etudes { 
     grid-area : etudes; 
     background-color :var(--bg-light); 
     padding : 15px ;
     border-radius: 7px;
-    border: 1px solid #f8eee5;     
+    border: 1.3px solid #fce5d2;     
     transition: transform 0.2s ease
 }
-#projets { 
-    grid-area : projets;
-    background-color : var(--bg-light);
-    padding : 15px;
+
+
+#projets {
+    grid-area: projets;
+    background-color: var(--bg-light);
+    padding: 15px;
     border-radius: 7px;
-    border: 1px solid #f8eee5;     
-    transition: transform 0.2s ease
+    border: 1.3px solid #fce5d2;     
+    transition: transform 0.2s ease;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
 }
+
+
+
 #competences { 
     grid-area : competences; 
     background-color :var(--bg-light); 
     padding : 15px;
     border-radius: 7px;
-    border: 1px solid #f8eee5;     
+    border: 1.3px solid #fce5d2;     
     transition: transform 0.2s ease
 
 }        
@@ -60,14 +72,15 @@ h2 {
     background-color :var(--bg-light); 
     padding : 15px;
     border-radius: 7px;
-    border: 1px solid #f8eee5;     
+    border: 1.3px solid #fce5d2;     
     transition: transform 0.2s ease
 }
 
 #etudes:hover, #projets:hover, #competences:hover, #hobbies:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(48, 12, 12, 0.1);
 }
+
 .toute_page {
     display : flex;
     flex-direction: column;
@@ -76,6 +89,7 @@ h2 {
     margin : 0 auto
 
 }
+
 ul { list-style-type:none;
 padding-left:  0;}
 
@@ -104,10 +118,11 @@ li::before {
 text-align: right;}
 
 #photo img { border-radius: 15%;
-border: 1px solid var(--beige)
+border: 1.5px solid var(--primary-light)
 ;object-fit: cover;}
 
 #contact {
+    
     margin-top: 20px;   
     margin-bottom: 20px;
     background-color: var(--beige);
@@ -118,4 +133,17 @@ border: 1px solid var(--beige)
     align-items: center;      
     border-bottom: 1px solid #ddd;
     justify-content: space-around;
+}
+
+
+.link{
+    color:  #1b5691;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
