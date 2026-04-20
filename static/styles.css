@@ -1,25 +1,20 @@
 :root {
-    --primary: #3d5267;    
-    --accent: #bb2413;    
-    --bg-light: #fef7ef;   
-    --white: #fef9f6;
-    --beige :  #f7efe9;
-    --primary-light :  #4d6c8b;
+    --vert-fonce: #335f31;    
+    --vert: #058a0e;    
+    --blanc: #fefefe;
+    --fond :  #f6faf3;
 }
 body {
-    background-color: var(--bg-light);
-    color: var(--primary);
+    background-color: var(--fond);
+    color: var(--vert-fonce);
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 2px solid var(--vert);
     padding-bottom: 5px;
-    margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
@@ -35,56 +30,48 @@ h2 {
 
 #etudes { 
     grid-area : etudes; 
-    background-color :var(--bg-light); 
+    background-color :var(--fond); 
     padding : 15px ;
-    border-radius: 7px;
-    border: 1.3px solid #fce5d2;     
-    transition: transform 0.2s ease
+    border-radius: 5px;
+    border: 1.3px solid #defcd2;     
 }
 
 
 #projets {
     grid-area: projets;
-    background-color: var(--bg-light);
+    background-color: var(--fond);
     padding: 15px;
-    border-radius: 7px;
-    border: 1.3px solid #fce5d2;     
-    transition: transform 0.2s ease;
+    border-radius: 5px;
+    border: 1.3px solid #defcd2;     
     max-height: 350px;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: var(--accent) transparent;
+    scrollbar-color: var(--vert) transparent;
 }
 
 
 
 #competences { 
     grid-area : competences; 
-    background-color :var(--bg-light); 
+    background-color :var(--fond); 
     padding : 15px;
-    border-radius: 7px;
-    border: 1.3px solid #fce5d2;     
-    transition: transform 0.2s ease
+    border-radius: 5px;
+    border: 1.3px solid #defcd2;     
 
 }        
 #hobbies { 
     grid-area : hobbies; 
-    background-color :var(--bg-light); 
+    background-color :var(--fond); 
     padding : 15px;
-    border-radius: 7px;
-    border: 1.3px solid #fce5d2;     
-    transition: transform 0.2s ease
+    border-radius: 5px;
+    border: 1.3px solid #defcd2;     
 }
 
-#etudes:hover, #projets:hover, #competences:hover, #hobbies:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(48, 12, 12, 0.1);
-}
-
+ 
 .toute_page {
     display : flex;
     flex-direction: column;
-    background : var(--white);
+    background : var(--blanc);
     max-width: 1000px;
     margin : 0 auto
 
@@ -101,14 +88,14 @@ li {
 
 li::before {
     content: "•";
-    color: var(--accent);
+    color: var(--vert);
     position: absolute;
     left: 0;
     font-weight: bold;
 }
 .header {
-    background-color : var(--primary);
-    color : var(--white);
+    background-color : var(--vert-fonce);
+    color : var(--blanc);
     padding : 40px;
     display : flex;
     justify-content: space-between
@@ -117,33 +104,31 @@ li::before {
 .header p {font-size : 1.2rem;
 text-align: right;}
 
-#photo img { border-radius: 15%;
-border: 1.5px solid var(--primary-light)
-;object-fit: cover;}
+#photo img { border-radius: 5%;
+border: 1.5px solid    #4d8b50;
+
+}
 
 #contact {
     
     margin-top: 20px;   
     margin-bottom: 20px;
-    background-color: var(--beige);
+    background-color: var(--fond);
     font-size: 0.9rem;  
     text-align: center;       
-    display: flex;
-    flex-direction: column;   
-    align-items: center;      
     border-bottom: 1px solid #ddd;
-    justify-content: space-around;
+    border-top : 1px solid #ddd;
 }
 
 
 .link{
     color:  #1b5691;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .link:hover {
-    color: var(--accent);
+    color: var(--vert);
     text-decoration: underline;
 }
